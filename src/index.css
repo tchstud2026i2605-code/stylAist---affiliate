@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Montserrat:wght@300;400;500;600&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Cormorant Garamond", ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+  --font-sans: "Montserrat", ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  
+  --color-brand-orange: #f7933b;
+  --color-brand-pink: #ff94b8;
+  --color-brand-pink-deep: #d6186a;
+  --color-brand-orange-deep: #e35802;
+  --color-brand-pink-muted: #eba2b9;
+  --color-brand-pink-light: #ffc9da;
+  --color-brand-cream: #ffebc9;
+}
+
+@layer utilities {
+  .hide-scrollbar {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+  .hide-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: #ffebc9;
+  color: #000000;
+}
